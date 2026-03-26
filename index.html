@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> <meta name="description" content="ToolNova — Free instant online tools for content creators. Word counter, title generator, password generator, image converter and more. No sign-up needed."> <title>ToolNova - Free Online Tools</title> <link rel="icon" type="image/x-icon" href="favicon.ico"> <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VYJ1Z6C7B5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-VYJ1Z6C7B5');
-</script>
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ToolNova — Free Online Tools for Everyone</title>
   <meta name="description" content="ToolNova offers free, instant online tools — image converter, word counter, password generator, title generator and more. No sign-up. No download. Just tools.">
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="apple-touch-icon" href="favicon.png">
+
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://YOUR-USERNAME.github.io/toolnova">
+  <meta property="og:url" content="https://savtools.github.io/ToolNova">
   <meta property="og:title" content="ToolNova — Free Online Tools for Everyone">
   <meta property="og:description" content="Free instant online tools. No sign-up needed.">
-  <meta property="og:image" content="https://YOUR-USERNAME.github.io/toolnova/preview.png">
+  <meta property="og:image" content="https://savtools.github.io/ToolNova/preview.png">
+
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="ToolNova — Free Online Tools for Everyone">
   <meta name="twitter:description" content="Free instant online tools. No sign-up needed.">
-  <meta name="twitter:image" content="https://YOUR-USERNAME.github.io/toolnova/preview.png">
+  <meta name="twitter:image" content="https://savtools.github.io/ToolNova/preview.png">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VYJ1Z6C7B5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-VYJ1Z6C7B5');
+  </script>
 
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
@@ -42,9 +45,12 @@
       --success: #34d399;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    body <h1 style="text-align:center;">Welcome to ToolNova</h1>
-<p style="text-align:center;">Your free online tools for everyday tasks.</p> { font-family: 'DM Sans', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; }
-
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+    }
     header {
       background: var(--surface);
       border-bottom: 1px solid var(--border);
@@ -206,7 +212,6 @@
 <div style="max-width:900px;margin:0 auto;padding:0 20px;">
   <div class="ad-banner">
     <strong>Advertisement</strong>
-    <!-- PASTE YOUR GOOGLE ADSENSE CODE HERE -->
     Ad space — 728x90
   </div>
 </div>
@@ -225,11 +230,11 @@
     </div>
     <textarea id="counterInput" placeholder="Paste or type your text here..." oninput="countWords()"></textarea>
     <div class="stats-row">
-      <div class="stat-pill"><strong id="wordCount">0</strong>Words</div>
-      <div class="stat-pill"><strong id="charCount">0</strong>Characters</div>
-      <div class="stat-pill"><strong id="sentenceCount">0</strong>Sentences</div>
-      <div class="stat-pill"><strong id="paraCount">0</strong>Paragraphs</div>
-      <div class="stat-pill"><strong id="readTime">0 min</strong>Read time</div>
+      <div class="stat-pill"><strong id="wordCount">0</strong> Words</div>
+      <div class="stat-pill"><strong id="charCount">0</strong> Characters</div>
+      <div class="stat-pill"><strong id="sentenceCount">0</strong> Sentences</div>
+      <div class="stat-pill"><strong id="paraCount">0</strong> Paragraphs</div>
+      <div class="stat-pill"><strong id="readTime">0 min</strong> Read time</div>
     </div>
   </div>
 
@@ -292,9 +297,9 @@
       <div class="color-swatch" id="colorSwatch" style="background:#4f8ef7;"></div>
     </div>
     <div class="stats-row">
-      <div class="stat-pill"><strong id="hexOut">#4F8EF7</strong>HEX</div>
-      <div class="stat-pill"><strong id="rgbOut">79, 142, 247</strong>RGB</div>
-      <div class="stat-pill"><strong id="hslOut">218°, 91%, 64%</strong>HSL</div>
+      <div class="stat-pill"><strong id="hexOut">#4F8EF7</strong> HEX</div>
+      <div class="stat-pill"><strong id="rgbOut">79, 142, 247</strong> RGB</div>
+      <div class="stat-pill"><strong id="hslOut">218°, 91%, 64%</strong> HSL</div>
     </div>
   </div>
 
@@ -323,7 +328,6 @@
       <button class="btn btn-sm btn-outline" onclick="copyPassword()">📋 Copy Password</button>
       <button class="btn btn-sm btn-outline" onclick="generatePassword()">🔄 New Password</button>
     </div>
-    <div id="passStrength" style="margin-top:8px;font-size:0.82rem;color:var(--muted);"></div>
   </div>
 
   <div class="section-title">🎬 Content Creator Tools</div>
@@ -367,7 +371,6 @@
   <!-- AD SPOT 2 -->
   <div class="ad-banner" style="margin:30px 0;">
     <strong>Advertisement</strong>
-    <!-- PASTE YOUR GOOGLE ADSENSE CODE HERE -->
     Ad space — 300x250
   </div>
 
@@ -409,5 +412,21 @@
   <p>© 2026 ToolNova — Free Tools for Everyone</p>
   <p>
     <a href="https://heydearestmia.blogspot.com" target="_blank">Blog</a> ·
-    <a href="mailto: shopvyntraenergy@gmail.com">Contact</a> ·
-    Privacy: W
+    <a href="mailto:your@email.com">Contact</a> ·
+    Privacy: We don't collect any data.
+  </p>
+</footer>
+
+<script>
+  // ====================== TEXT TOOLS ======================
+  function countWords() {
+    const text = document.getElementById('counterInput').value.trim();
+    if (!text) {
+      document.getElementById('wordCount').textContent = '0';
+      document.getElementById('charCount').textContent = '0';
+      document.getElementById('sentenceCount').textContent = '0';
+      document.getElementById('paraCount').textContent = '0';
+      document.getElementById('readTime').textContent = '0 min';
+      return;
+    }
+    const word
